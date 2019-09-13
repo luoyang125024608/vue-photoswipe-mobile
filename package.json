@@ -1,7 +1,7 @@
 {
   "name": "vue-mobile-photoswipe",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mobile picture preview plugin based on photoswipe and vue 基于vue和photoswipe的移动端图片查看器",
   "main": "dist/index.js",
   "directories": {
     "src": "src",
