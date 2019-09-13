@@ -76,25 +76,17 @@ list : [{src:'xxx',captionData:{}},{src:'xxx',captionData:{}}]
 ```
 ```
 <previewer :list="list" ref="previewer" :options="{tapToClose:false}">
-
-      <template slot-scope="{current,total}" slot="topbar">
-        <div>
-          <span>{{current+1}} of {{total}}</span>
-          <div @click="$refs.previewer.close()">关闭</div>
+      <template slot-scope="{current}" slot="topbar">
+        <div class="flex flex-align-center flex-justify-between">
+          <span>{{current+1}} of {{list.length}}</span>
+          <a @click="$refs.previewer.close()">关闭</a>
         </div>
       </template>
-      
       <template slot-scope="{current}" slot="caption">
-        <div :captionData="list[current].captionData"></div>
+        <some-caption :captionData="list[current].captionData"></some-caption>
       </template>
-      
-      <template slot="caption">
-              <div :captionData="myData"></div>
-       </template>
-       
-</previewer>
-    
-   i
+    </previewer>
+
     this.$refs.previewer.show(index)
 ```
 
