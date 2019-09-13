@@ -1,5 +1,5 @@
 {
-  "name": "vue-mobile-photoswipe",
+  "name": "vue-photoswipe-mobile",
   "version": "1.0.0",
   "description": "A mobile picture preview plugin based on photoswipe and vue 基于vue和photoswipe的移动端图片查看器",
   "main": "dist/index.js",
@@ -15,6 +15,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luoyang125024608/vue-mobile-photoswipe.git"
+    "url": "https://github.com/luoyang125024608/vue-photoswipe-mobile.git"
   }
 }

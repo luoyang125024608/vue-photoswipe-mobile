@@ -1,4 +1,4 @@
-#vue-mobile-photoswipe
+#vue-photoswipe-mobile
 
 > 基于[photoswipe](http://photoswipe.com)的vue图片查看器
 
@@ -32,11 +32,11 @@ closeEl = false // 关闭按钮，需要自己在topbar实现，看下面
 
 # 安装
 ```
-npm install vue-mobile-photoswipe --save
+npm install vue-photoswipe-mobile --save
 ```
 # 引入
 ```
-import previewer from 'vue-mobile-photoswipe'
+import previewer from 'vue-photoswipe-mobile'
 ```
 模块没打包成umd，需要的话自己拉代码去打包吧。都2020年了。
 
