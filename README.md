@@ -45,20 +45,23 @@ import previewer from 'vue-mobile-photoswipe'
 ### 参数
 
 
-####index 需要显示的图片索引 必传
+###index 
+需要显示的图片索引 必传
 
-####list    图片列表[{src:'xxx'},{src:'xxx'}] 必传
+###list    
+图片列表[{src:'xxx'},{src:'xxx'}] 必传
 
-####options 参照[photoswipe](http://photoswipe.com) 不必传
+###options 
+参照[photoswipe](http://photoswipe.com) 不必传
 options.addCaptionHTMLFn 被去掉了，用slot去插入caption吧
 
-###函数调用
+###函数调用方式
 ```
 previewer.open(index, list, options)
 
 函数调用事用open
 ```
-###组件调用
+###组件调用方式
 
 局部注册组件
 ```
