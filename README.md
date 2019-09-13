@@ -77,7 +77,7 @@ list : [{src:'xxx',captionData:{}},{src:'xxx',captionData:{}}]
 ```
 <previewer :list="list" ref="previewer" :options="{tapToClose:false}">
       <template slot-scope="{current}" slot="topbar">
-        <div class="flex flex-align-center flex-justify-between">
+        <div>
           <span>{{current+1}} of {{list.length}}</span>
           <a @click="$refs.previewer.close()">关闭</a>
         </div>
