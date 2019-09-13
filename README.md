@@ -79,13 +79,13 @@ list : [{src:'xxx',captionData:{}},{src:'xxx',captionData:{}}]
 
       <template slot-scope="{current,total}" slot="topbar">
         <div>
-          <span>{{current}} of {{total}}</span>
+          <span>{{current+1}} of {{total}}</span>
           <div @click="$refs.previewer.close()">关闭</div>
         </div>
       </template>
       
-      <template slot-scope="{item}" slot="caption">
-        <div :captionData="item.captionData"></div>
+      <template slot-scope="{current}" slot="caption">
+        <div :captionData="list[current].captionData"></div>
       </template>
       
       <template slot="caption">

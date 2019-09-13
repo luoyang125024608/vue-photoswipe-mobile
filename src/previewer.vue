@@ -10,7 +10,7 @@
       <div class="pswp__ui pswp__ui--hidden">
         <div class="pswp__top-bar">
           <template v-if="$scopedSlots.topbar">
-            <slot name="topbar" :current="index+1" :total="imgs.length"></slot>
+            <slot name="topbar" :current="index" :total="imgs.length"></slot>
           </template>
           <template v-else>
             <div class="pswp__counter"></div>
@@ -32,7 +32,7 @@
         <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
         <div class="my__caption" v-if="$scopedSlots.caption">
           <div class="my__caption__center">
-            <slot :item="imgs[index]" name="caption"></slot>
+            <slot :current="index" name="caption"></slot>
           </div>
         </div>
       </div>
