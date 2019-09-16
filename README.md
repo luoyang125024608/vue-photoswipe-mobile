@@ -43,7 +43,7 @@ import previewer from 'vue-photoswipe-mobile'
 ```
 模块没打包成umd，需要的话自己拉代码去打包吧。都2020年了。
 
-#使用
+# 使用
 
 ### 参数
 
