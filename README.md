@@ -62,7 +62,7 @@ options.addCaptionHTMLFn 被去掉了，用slot去插入caption吧
 ```
 previewer.open(index, list, options)
 
-函数调用事用open
+函数调用时用open
 ```
 ### 组件调用方式
 
@@ -89,7 +89,7 @@ list : [{src:'xxx',captionData:{}},{src:'xxx',captionData:{}}]
         <some-caption :captionData="list[current].captionData"></some-caption>
       </template>
     </previewer>
-
+    // 函数调用时用show
     this.$refs.previewer.show(index)
 ```
 
