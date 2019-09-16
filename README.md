@@ -89,7 +89,7 @@ list : [{src:'xxx',captionData:{}},{src:'xxx',captionData:{}}]
         <some-caption :captionData="list[current].captionData"></some-caption>
       </template>
     </previewer>
-    // 函数调用时用show
+    // 组件调用时用show
     this.$refs.previewer.show(index)
 ```
 
