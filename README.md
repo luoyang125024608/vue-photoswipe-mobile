@@ -1,6 +1,9 @@
-#vue-photoswipe-mobile
+## vue-photoswipe-mobile
 
 > 基于[photoswipe](http://photoswipe.com)的vue图片查看器
+
+## 示例  
+[地址](https://m.9ji.com/product/comment/38904?type=5) 
 
 ## 说明
 
@@ -45,23 +48,23 @@ import previewer from 'vue-photoswipe-mobile'
 ### 参数
 
 
-###index 
+### index 
 需要显示的图片索引 必传
 
-###list    
+### list    
 图片列表[{src:'xxx'},{src:'xxx'}] 必传
 
-###options 
+### options 
 参照[photoswipe](http://photoswipe.com) 不必传
 options.addCaptionHTMLFn 被去掉了，用slot去插入caption吧
 
-###函数调用方式
+### 函数调用方式
 ```
 previewer.open(index, list, options)
 
 函数调用事用open
 ```
-###组件调用方式
+### 组件调用方式
 
 局部注册组件
 ```
@@ -89,10 +92,6 @@ list : [{src:'xxx',captionData:{}},{src:'xxx',captionData:{}}]
 
     this.$refs.previewer.show(index)
 ```
-
-
-## 生产例子  
-[地址](https://m.9ji.com/product/comment/38904?type=5) 
 
 
 
