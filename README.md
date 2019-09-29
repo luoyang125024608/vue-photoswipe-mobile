@@ -1,6 +1,9 @@
-#vue-photoswipe-mobile
+## vue-photoswipe-mobile
 
 > 基于[photoswipe](http://photoswipe.com)的vue图片查看器
+
+## 示例  
+[地址](https://m.9ji.com/product/comment/38904?type=5) 
 
 ## 说明
 
@@ -8,11 +11,11 @@
 
 2、支持slot扩展 topbar 和 底栏caption
 
-3、取消了图片需设定尺寸的要求
+3、取消了photoswipe图片需设定尺寸的要求
 
-4、解决了长按图片浏览器无法弹出保存动作的问题
+4、解决了photoswipe长按图片浏览器无法弹出保存动作的问题
 
-5、解决了连续双击放大缩小图片导致放大过程终止的问题
+5、解决了photoswipe连续双击放大缩小图片导致放大过程终止的问题
 
 6、强行关掉原photoswipe参数
 ````
@@ -40,28 +43,28 @@ import previewer from 'vue-photoswipe-mobile'
 ```
 模块没打包成umd，需要的话自己拉代码去打包吧。都2020年了。
 
-#使用
+# 使用
 
 ### 参数
 
 
-###index 
+### index 
 需要显示的图片索引 必传
 
-###list    
+### list    
 图片列表[{src:'xxx'},{src:'xxx'}] 必传
 
-###options 
+### options 
 参照[photoswipe](http://photoswipe.com) 不必传
 options.addCaptionHTMLFn 被去掉了，用slot去插入caption吧
 
-###函数调用方式
+### 函数调用方式
 ```
 previewer.open(index, list, options)
 
-函数调用事用open
+函数调用时用open
 ```
-###组件调用方式
+### 组件调用方式
 
 局部注册组件
 ```
@@ -86,13 +89,9 @@ list : [{src:'xxx',captionData:{}},{src:'xxx',captionData:{}}]
         <some-caption :captionData="list[current].captionData"></some-caption>
       </template>
     </previewer>
-
+    // 组件调用时用show
     this.$refs.previewer.show(index)
 ```
-
-
-## 生产例子  
-[地址](https://m.9ji.com/product/comment/38904?type=5) 
 
 
 
