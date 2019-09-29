@@ -759,6 +759,9 @@ var _animations = {},
           if(_customZoomToRuning){
             _customZoomToRuning = false
           }
+          // ios safari 13
+					_currPointers = []
+
 					if(onComplete) {
 						onComplete();
 					}
